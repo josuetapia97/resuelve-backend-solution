@@ -1,0 +1,17 @@
+{
+  "name": "resuelve-chellenge",
+  "version": "1.0.0",
+  "main": "server.js.js",
+  "author": "Josue Tapia",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,58 @@
+{
+    "jugadores" : [  
+       {  
+          "nombre":"Juan Perez",
+          "nivel":"C",
+          "goles_minimos":15,
+          "goles":12,
+          "sueldo":50000,
+          "bono":25000,
+          "sueldo_completo":null,
+          "equipo":"rojo"
+       },
+       {  
+          "nombre":"EL Cuauh",
+          "nivel":"Cuauh",
+          "goles_minimos":20,
+          "goles":9,
+          "sueldo":100000,
+          "bono":30000,
+          "sueldo_completo":null,
+          "equipo":"azul"
+       },
+       {  
+          "nombre":"Cosme Fulanito",
+          "nivel":"A",
+          "goles_minimos":5,
+          "goles":10,
+          "sueldo":20000,
+          "bono":10000,
+          "sueldo_completo":null,
+          "equipo":"azul"
+ 
+       },
+       {  
+          "nombre":"El Rulo",
+          "nivel":"B",
+          "goles_minimos":10,
+          "goles":1,
+          "sueldo":20000,
+          "bono":15000,
+          "sueldo_completo":null,
+          "equipo":"rojo"
+ 
+       },
+       {  
+         "nombre":"Luis",
+         "nivel":"Cuauh",
+         "goles_minimos":20,
+         "goles":3,
+         "sueldo":50000,
+         "bono":10000,
+         "sueldo_completo":null,
+         "equipo":"rojo"
+
+      }
+    ]
+ }
+ 
