@@ -1,15 +1,14 @@
 const express = require('express');
-const path = require('path');
-const jsonFile = require('./json/resuelveFC.json');
+const json = require('./json/resuelveFC.json');
 const CalculoSueldo = require('./custom/calculoSueldo.js');
 const fetch = require('node-fetch');
 const app = express()
 const port = 3000;
-//console.log(jsonFile);
 const getPlayers = async () =>{
     try {
-        const res = await fetch('http://localhost:3000/static/resuelveFC.json')
+        const res = await fetch('http://localhost:3001/jugadores')
         const json_resp = await res.json()
+        //const json_resp = json;
         const jugadores = json_resp.jugadores;
         const calculoSueldo = new CalculoSueldo(jugadores);
         calculoSueldo.computeSueldoFijo();
@@ -19,10 +18,8 @@ const getPlayers = async () =>{
     }
 }
 
-app.use('/static', express.static(path.join(__dirname, 'json')))
-
 app.get(
-    '/',
+    '/sueldo_completo',
     async function(req,res){
         const json = await getPlayers(); 
         res.send(json);
