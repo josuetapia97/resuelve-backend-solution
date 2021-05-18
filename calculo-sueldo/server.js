@@ -1,12 +1,12 @@
 const express = require('express');
-const json = require('./json/resuelveFC.json');
+//const json = require('./json/resuelveFC.json');
 const CalculoSueldo = require('./custom/calculoSueldo.js');
 const fetch = require('node-fetch');
 const app = express()
 const port = 3000;
 const getPlayers = async () =>{
     try {
-        const res = await fetch('http://localhost:3001/jugadores')
+        const res = await fetch('http://consumidor-api:3001/jugadores')
         const json_resp = await res.json()
         //const json_resp = json;
         const jugadores = json_resp.jugadores;

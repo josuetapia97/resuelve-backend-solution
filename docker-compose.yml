@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  calculo-sueldo:
+    container_name: calculo-sueldo
+    build: ./calculo-sueldo
+    ports:
+      - 3000:3000
+    networks: 
+      - backend_network
+
+  consumidor-api:
+    container_name: consumidor-api
+    build: ./consumidor-api
+    ports:
+      - 3001:3001
+    networks: 
+      - backend_network
+
+  registro-jugadores:
+    container_name: registro-jugadores
+    build: ./registro-jugadores
+    ports:
+      - 80:80
+    networks:
+      - backend_network
+
+networks: 
+    backend_network:
