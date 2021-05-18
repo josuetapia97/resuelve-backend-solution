@@ -33,7 +33,7 @@ const fetchAllData = async (json) => {
 }
 const getPlayersFromApi = async () =>{
     try {
-        const res = await fetch('http://localhost:8000/jugadores/')
+        const res = await fetch('http://registro-jugadores/jugadores/')
         const jsonResp = await res.json()
         const jsonRespAllData = await fetchAllData(jsonResp);
         return jsonRespAllData;
