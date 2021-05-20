@@ -51,7 +51,12 @@ Este módulo sirve como intermediario entre el módulo de `registro-jugadores` y
 
 Levantar el ambiente realmente es muy sencillo.
 
-Primero tenemos que clonar el repo, para ello necesitamos tener previamente git en nuestra computadora, abrimos una terminal e introducimos el siguiente comando:
+Primero tenemos que clonar el repo, para ello necesitamos instalar un par de cosas.
+
+- Instalar [Git](https://git-scm.com/downloads "instalar Git")
+- Instalar [Docker](https://docs.docker.com/get-docker/ "instalar Docker")
+
+Abrimos una terminal e introducimos el siguiente comando:
 
 ``git clone https://github.com/josuetapia97/resuelve-backend-solution.git``
 
